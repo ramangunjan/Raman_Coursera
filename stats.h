@@ -36,7 +36,7 @@
  * @return no return
  */
 
-	void print_array(unsigned char*, unsigned int); 
+	void print_array(unsigned char*, unsigned char); 
 
 /**
  * @brief print statistics of an arary including minimum, maxmimum, mean and median
@@ -67,7 +67,7 @@
  * @return median an unsignedd char
  */
 
-	unsigned char find_median(unsigned char*, unsigned int);
+	unsigned char find_median(unsigned char*, unsigned char);
 
 /**
  * @brief find mean from an array of data and a lenght
@@ -82,7 +82,7 @@
  * @return mean an unsignedd char
  */
 
-	unsigned char find_mean(unsigned char*, unsigned int);
+	unsigned char find_mean(unsigned char*, unsigned char);
 
 /**
  * @brief find maximum from an array of data and a lenght
@@ -94,10 +94,10 @@
  * @param Output An unsigned char with maximum value
  * 
  *
- * @return maximum an unsignedd char
+ * @return unsigned char max value
  */
 
-	unsigned char find_maximum(unsigned char*, unsigned int);
+	unsigned char find_maximum(unsigned char*);
 
 
 /**
@@ -110,10 +110,10 @@
  * @param Output An unsigned char with minimum value
  * 
  *
- * @return minimum an unsignedd char
+ * @return minimum value
  */
 
-	unsigned char find_minimum(unsigned char*, unsigned int);
+	unsigned char find_minimum(unsigned char*, unsigned char);
 
 
 /**
@@ -129,7 +129,7 @@
  * @return unsignedd char array
  */
 
-	void sort_array(unsigned char*, unsigned int);
+	void sort_array(unsigned char*, unsigned char);
 
 
 
