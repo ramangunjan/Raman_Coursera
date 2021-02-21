@@ -9,13 +9,13 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file <stats.h> 
+ * @brief <programming assignment that prints statistics to the command line using a variety of c-programming operators and features >
  *
  * <Add Extended Description Here>
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author <Gunjan Raman>
+ * @date <21.02.2021 >
  *
  */
 #ifndef __STATS_H__
@@ -24,17 +24,113 @@
 /* Add Your Declarations and Function Comments here */ 
 
 /**
- * @brief <Add Brief Description of Function Here>
+ * @brief print an aray of given size
  *
- * <Add Extended Description Here>
+ * This function takes an array of given size as an input. This array will be display as an output 
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
+ * @param Input A unsigned char pointer to an n-element data array
+ * @param Input An unsigned integer as the size of the array
+ * @param Output An unsigned char array
+ * 
  *
- * @return <Add Return Informaiton here>
+ * @return no return
  */
+
+	void print_array(unsigned char*, unsigned int); 
+
+/**
+ * @brief print statistics of an arary including minimum, maxmimum, mean and median
+ *
+ * This function just prints the statistics of an array 
+ *
+ * @param Input A unsigned char pointer to an n-element data array
+ * @param Input An unsigned integer as the size of the array
+ * @param Output Minimum, Maxmimu , mean andmedium
+ * 
+ *
+ * @return no return
+ */
+
+	void print_statistics(unsigned char, unsigned char, unsigned char, unsigned char);
+
+
+/**
+ * @brief find median from an array of data and a lenght
+ *
+ * This function takes an array of given size as an input. Median will be calculated 
+ *
+ * @param Input A unsigned char pointer to an n-element data array
+ * @param Input An unsigned integer as the size of the array
+ * @param Output An unsigned char with median value
+ * 
+ *
+ * @return median an unsignedd char
+ */
+
+	unsigned char find_median(unsigned char*, unsigned int);
+
+/**
+ * @brief find mean from an array of data and a lenght
+ *
+ * This function takes an array of given size as an input. Mean will be calculated 
+ *
+ * @param Input A unsigned char pointer to an n-element data array
+ * @param Input An unsigned integer as the size of the array
+ * @param Output An unsigned char with mean value
+ * 
+ *
+ * @return mean an unsignedd char
+ */
+
+	unsigned char find_mean(unsigned char*, unsigned int);
+
+/**
+ * @brief find maximum from an array of data and a lenght
+ *
+ * This function takes an array of given size as an input. maximum will be calculated 
+ *
+ * @param Input A unsigned char pointer to an n-element data array
+ * @param Input An unsigned integer as the size of the array
+ * @param Output An unsigned char with maximum value
+ * 
+ *
+ * @return maximum an unsignedd char
+ */
+
+	unsigned char find_maximum(unsigned char*, unsigned int);
+
+
+/**
+ * @brief find minimum from an array of data and a lenght
+ *
+ * This function takes an array of given size as an input. minimum will be calculated 
+ *
+ * @param Input A unsigned char pointer to an n-element data array
+ * @param Input An unsigned integer as the size of the array
+ * @param Output An unsigned char with minimum value
+ * 
+ *
+ * @return minimum an unsignedd char
+ */
+
+	unsigned char find_minimum(unsigned char*, unsigned int);
+
+
+/**
+ * @brief Sort an array of data and a lenght from largesst to smallest
+ *
+ * This function takes an array of given size as an input. It sorts it from largest to smallest
+ *
+ * @param Input A unsigned char pointer to an n-element data array
+ * @param Input An unsigned integer as the size of the array
+ * @param Output An unsigned char array sorted from largest to smallest
+ * 
+ *
+ * @return unsignedd char array
+ */
+
+	void sort_array(unsigned char*, unsigned int);
+
 
 
 #endif /* __STATS_H__ */
